@@ -27,7 +27,7 @@ body {
 
 /* 3.Estilo do componente principal: .card */
 .card {
-    background-color: var(--cor-branco);
+    background-color: rgb(72, 45, 121);
     width: 320px;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
@@ -35,7 +35,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Esconder qualquer conteúdo filho que possivelmente saia dos limites  */
     overflow: hidden;
-    text-align: center;
+    text-align: left;
 }
 
 /* 4.Efeito hover no card */
@@ -43,6 +43,8 @@ body {
     transform: translateY(-10px);
     /* Mover o card em 10 px para cima */
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    border: 3px solid black;
 }
 
 /* 5. Estilos da imagem do Card */
@@ -65,21 +67,21 @@ body {
 
 .card_name {
     font-size: 1.5rem;
-    color: var(--cor-texto-primario);
+    color: rgb(5, 5, 5);
     margin-bottom: 8px;
 }
 
 .card_title {
     font-size: 1rem;
     /* 16px */
-    color: var(--cor-texto-secundario);
+    color: #000000;
     margin-bottom: 16px;
 }
 
 /* 7.Estilo dos icones sociais(utilizando flexbox) */
 .card_social {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 16px;
 }
 
@@ -90,17 +92,20 @@ body {
     width: 40px;
     height: 40px;
     color: var(--cor-acento);
-    border: 2px solid var(--cor-acento);
+    border: 2px solid rgba(0, 0, 0, 0.993);
     border-radius: 50%;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, ease, color 0.3s ease;
+    color: #000000;
+    
 }
 
 .card_social a:hover {
-    background-color: var(--cor-acento);
+    background-color: rgb(46, 44, 211);
     color: var(--cor-branco);
-    border-color: var(--cor-acento);
+    border-color:black;
+    
 }
 
 /* 8. Design Responsivo (nossa primeira Media Query!) */
@@ -108,5 +113,6 @@ body {
     .card {
         width: 90%;
         /* O card ocupara 90% da largura da tela */
+
     }
 }
